@@ -5,11 +5,11 @@
 <a name="installation"></a>
 ## Installation
 
-Begin by installing this package through Composer. Edit your project's `composer.json` file to require `dialpath/laravel5-helpers`.
+Begin by installing this package through Composer. Edit your project's `composer.json` file to require `dialpath/dialpath-helpers`.
 
 ```json
 "require": {
-    "dialpath/laravel5-helpers": "dev-master"
+    "dialpath/dialpath-helpers": "dev-master"
 }
 ```
 
@@ -19,7 +19,7 @@ It will also be necessary to include the GitHub repository in the repositories s
 "repositories": [
     {
         "type": "vcs",
-        "url":  "git@github.com:dialpath/laravel5-helpers.git"
+        "url":  "git@github.com:dialpath/dialpath-helpers.git"
     }
 ]
 ```
