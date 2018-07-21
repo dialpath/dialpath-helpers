@@ -1,25 +1,20 @@
 @if (in_array($type, ['raw', 'html', 'token', 'image', 'button', 'submit', 'reset']))
-{!! $label !!}{!! $input !!}
+  {!! $label !!}{!! $input !!}
 @else
-<div class="form-group {{ empty($status) ? '' : 'has-' . $status }}">
-  {!! $label !!}
-  <div class="{{ empty($span) ? '' : 'col-md-' . $span }}">
-    @if (!empty($pre) || !empty($post))
-    <div class="input-group">
-    @endif
+  <div class="form-group form-float">
+    <div class="form-line">
       @if (!empty($pre))
-      <span class="input-group-addon">{!! $pre !!}</span>
+        <span class="input-group-addon">{!! $pre !!}</span>
       @endif
       {!! $input !!}
       @if (!empty($post))
-      <span class="input-group-addon">{!! $post !!}</span>
+        <span class="input-group-addon">{!! $post !!}</span>
       @endif
-    @if (!empty($pre) || !empty($post))
+      {!! $label !!}
     </div>
-    @endif
     @if (!empty($comment))
-    <p class="help-block">{!! $comment !!}</p>
+      <p class="small" style="color: #777; font-size:11px;">{{ $comment }}</p>
     @endif
   </div>
-</div>
+
 @endif
